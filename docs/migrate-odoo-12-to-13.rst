@@ -102,3 +102,29 @@ company_ids in res.users
 ========================
 
 The field ``company_ids`` is mandatory: https://github.com/odoo/odoo/commit/4205cb2728041487bd026bf5c6bac590e0ace1e9
+
+console.log('ok')
+=================
+
+``console.log('ok')`` is replaced with ``console.log('test successful')`` in js tests.
+
+Since odoo 13.0:
+
+    To signal success test do: console.log('test successful')
+
+    To signal test failure raise an exception or call console.error
+
+Odoo 12.0 and earlier versions:
+
+    To signal success test do:
+
+    console.log('ok')
+
+    To signal failure do:
+
+    console.log('error')
+
+See
+
+* https://github.com/odoo/odoo/commit/78121b68d099b16f2d775a7a8a963a2a0f474843
+* https://github.com/odoo/odoo/commit/fec86404e7de3b22b4945812d525d4017d254c33
