@@ -2,6 +2,11 @@
  ``12.0-`` → ``13.0+``
 =======================
 
+OCA's checklist
+===============
+
+https://github.com/OCA/maintainer-tools/wiki/Migration-to-version-13.0#tasks-to-do-in-the-migration
+
 New API
 =======
 
