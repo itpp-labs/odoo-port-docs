@@ -40,7 +40,8 @@ New API
     find . -type f -name '*.js' | xargs sed -i '/web.ControlPanelMixin/d'
     find . -type f -name '*.js' | xargs perl -i -p0e 's/ControlPanelMixin, \{\n\s*template/{\n    hasControlPanel: true,\n    contentTemplate/g'
     
-    
+    # track_visibility is obsolete
+    find . -type f -name '*.py' | xargs sed -i 's/track_visibility="always"/tracking=True/g'    
     
     # serialize_exception was move from odoo/http.py
     # https://github.com/odoo/odoo/commit/0d1407a715901ea06e9a7211c0e3dbe09fadb785
