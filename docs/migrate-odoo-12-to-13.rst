@@ -18,7 +18,7 @@ New API
     
     # remove deprecated decorators
     # https://github.com/odoo/odoo/commit/c552fb7a618afe2feea2e0358ead9eb6ebff0c94
-    find . -type f -name '*.py' | xargs sed -i '/@api.model_cr/d'
+    find . -type f -name '*.py' | xargs sed -i '/@api.model_cr$/d'
     find . -type f -name '*.py' | xargs sed -i '/@api.v8/d'
     find . -type f -name '*.py' | xargs sed -i '/@api.model_cr_context/d'
     find . -type f -name '*.py' | xargs sed -i '/@api.noguess/d'
