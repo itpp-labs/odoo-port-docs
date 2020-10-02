@@ -134,3 +134,12 @@ See
 
 * https://github.com/odoo/odoo/commit/78121b68d099b16f2d775a7a8a963a2a0f474843
 * https://github.com/odoo/odoo/commit/fec86404e7de3b22b4945812d525d4017d254c33
+
+Barcode scanner code is moved
+=============================
+
+All the code in the `point_of_sale` module related to barcode scanner is moved from ``point_of_sale/static/src/js/devices.js`` to ``point_of_sale/static/src/js/barcode_reader.js``
+
+See
+
+* https://github.com/odoo/odoo/commit/7846c6f3a34aadb0e95f38810227309844017283
