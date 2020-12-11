@@ -6,6 +6,7 @@
    :maxdepth: 2
 
    helpers
+   migrate-odoo-13-to-14
    migrate-odoo-12-to-13
    migrate-odoo-11-to-12
    migrate-odoo-10-to-11
