@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = u'itpp.dev/port/'
-copyright = u'2020, IT-Projects Labs'
-author = u'IT-Projects Labs'
+copyright = u'2020, IT Projects Labs'
+author = u'IT Projects Labs'
 
 # The short X.Y version
 version = u''
@@ -134,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'PortingOdooModules.tex', u'Porting Odoo Modules Documentation',
-     u'IT-Projects Labs', 'manual'),
+     u'IT Projects Labs', 'manual'),
 ]
 
 
