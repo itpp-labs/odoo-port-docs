@@ -15,3 +15,34 @@ New API
     # tour.STEPS.SHOW_APPS_MENU_ITEM is replaced to tour.stepUtils.showAppsMenuItem()
     # https://github.com/odoo/odoo/commit/ab2e3fdb7d801f8846b84733a47127e818a49d5b
     find . -type f -name '*.js' | xargs sed -i 's/STEPS.SHOW_APPS_MENU_ITEM/stepUtils.showAppsMenuItem()/g'
+
+Point of Sale
+=============
+
+Select cashier
+--------------
+
+.. code-block:: javascript
+
+    const useSelectEmployee = require('pos_hr.useSelectEmployee');
+    const { selectEmployee } = useSelectEmployee();
+
+    // ...
+
+    const list = this.env.pos.employees
+        .filter((employee) => employee.id !== this.env.pos.get_cashier().id)
+        .map((employee) => {
+            return {
+                id: employee.id,
+                item: employee,
+                label: employee.name,
+                isSelected: false,
+            };
+        });
+
+    const employee = await selectEmployee(list);
+    if (employee) {
+        this.env.pos.set_cashier(employee);
+    }
+
+Based on: https://github.com/odoo/odoo/blob/338f8d843832c339c52c00c7f4c41b5ab2d696ed/addons/pos_hr/static/src/js/CashierName.js#L27-L41
