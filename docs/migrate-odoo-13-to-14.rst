@@ -19,8 +19,10 @@ New API
 Point of Sale
 =============
 
-Select cashier
---------------
+Cashier selecting popup
+-----------------------
+
+Instead of calling ``gui.select_employee`` use following code
 
 .. code-block:: javascript
 
