@@ -19,6 +19,17 @@ New API
 Point of Sale
 =============
 
+Point of Sale frontend was refactored to use `OWL <https://odoo.github.io/owl/>`__ framework. So almost everyting in dependent modules should be adapted to use OWL.
+
+New API
+-------
+
+.. code-block:: sh
+
+    # https://github.com/odoo/odoo/commit/c6397ab3b3654da336a4269a81d5d91016baf520
+    find . -type f -name '*.xml' | xargs sed -i 's/widget.format_currency/env.pos.format_currency/g'
+
+
 Cashier selecting popup
 -----------------------
 
