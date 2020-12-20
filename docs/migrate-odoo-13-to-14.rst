@@ -59,3 +59,5 @@ Instead of calling ``gui.select_employee`` use following code
     }
 
 Based on: https://github.com/odoo/odoo/blob/338f8d843832c339c52c00c7f4c41b5ab2d696ed/addons/pos_hr/static/src/js/CashierName.js#L27-L41
+
+.. include:: DINAR-PORT.rst
