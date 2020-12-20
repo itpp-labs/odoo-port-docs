@@ -134,3 +134,5 @@ See
 
 * https://github.com/odoo/odoo/commit/78121b68d099b16f2d775a7a8a963a2a0f474843
 * https://github.com/odoo/odoo/commit/fec86404e7de3b22b4945812d525d4017d254c33
+
+.. include:: DINAR-PORT.rst

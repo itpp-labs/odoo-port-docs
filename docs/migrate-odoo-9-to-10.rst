@@ -25,3 +25,5 @@ New references
     find . -type f -name '*.csv'  -o -name '*.py' -o -name '*.xml'  | xargs sed -i 's/base.group_sale_salesman/sales_team.group_sale_salesman/g'
     # product.prod_config_main
     find . -type f -name '*.xml' | xargs sed -i 's/product.prod_config_main/sale.prod_config_main/g'
+
+.. include:: DINAR-PORT.rst

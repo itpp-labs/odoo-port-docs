@@ -20,3 +20,5 @@ New API
     # https://github.com/odoo/odoo/commit/38c7ed3c73eb5efc370c6ac0050e38ca8810e59e
     find . -type f -name '*.js' | xargs sed -i 's/STEPS.TOGGLE_APPSWITCHER/STEPS.TOGGLE_HOME_MENU/g'
     find . -type f -name '*.js' | xargs sed -i 's/STEPS.MENU_MORE/STEPS.SHOW_APPS_MENU_ITEM/g'
+
+.. include:: DINAR-PORT.rst

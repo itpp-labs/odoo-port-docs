@@ -67,3 +67,5 @@ Python 3
     # TODO
     # SOMETHING.encode('base64') -> base64.b64encode(SOMETHING)
     # SOMETHING.decode('base64') -> base64.b64decode(SOMETHING)
+
+.. include:: DINAR-PORT.rst
