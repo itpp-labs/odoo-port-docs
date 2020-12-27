@@ -16,6 +16,13 @@ New API
     # https://github.com/odoo/odoo/commit/ab2e3fdb7d801f8846b84733a47127e818a49d5b
     find . -type f -name '*.js' | xargs sed -i 's/STEPS.SHOW_APPS_MENU_ITEM/stepUtils.showAppsMenuItem()/g'
 
+Selection
+=========
+
+  ValueError: *model.name*: required selection fields must define an ondelete policy that implements the proper cleanup of the corresponding records upon module uninstallation. Please use one or more of the following policies: 'set default' (if the field has a default defined), 'cascade', or a single-argument callable where the argument is the recordset containing the specified option.
+  
+See https://odoo-development.readthedocs.io/en/latest/dev/py/fields.html#selection
+
 Point of Sale
 =============
 
